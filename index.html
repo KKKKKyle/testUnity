@@ -16,31 +16,37 @@
   </script>
 </head>
 
-<body style="height: 100%;">
-    <div class="h-100 row align-items-center">
-      <div class="col-4">
-        <h3> Instruction Video </h3>
-        <iframe src="https://www.youtube.com/embed/WtT0bfMuSRU" frameborder="0"
-          allow="clipboard-write; encrypted-media; gyroscope" allowfullscreen>
-        </iframe>
-        <h3> Prompt:</h3>
-        <p>
-          After seeing the introduction, try to move around in this virtual house and simulate what you normally do in days. 
-        </p>
-        <p>
-          The robot will perform its tasks automatically. If you wanna make any feedback to the robot, just hit “Space” to type your feedback.
-        </p>
+<body>
+  <div class="row h-100 justify-content-start" style="margin-top: 10%;">
+    <div class="col-6 col-sm-3" style="margin-left: 10%;">
+      <h3> Instruction Video </h3>
+      <iframe min-width="420" min-height="315" src="https://www.youtube.com/embed/WtT0bfMuSRU" frameborder="0"
+        allow="clipboard-write; encrypted-media; gyroscope" allowfullscreen>
+      </iframe>
+      <h3> Prompt:</h3>
+      <p>
+        After seeing the introduction, try to move around in this virtual house and simulate what you normally do in
+        days.
+      </p>
+      <p>
+        The robot will perform its tasks automatically. If you wanna make any feedback to the robot, just hit “Space” to
+        type your feedback.
+      </p>
 
-      </div>
-      <div class="webgl-content col-6">
-        <div id="unityContainer"></div>
-        <div class="footer">
+    </div>
+    <div class="col-6">
+      <div class="webgl-content">
+        <div id="unityContainer" style="width: 100%;"></div>
+        <div class="webgl-content.footer">
           <div class="webgl-logo"></div>
           <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
           <div class="title">IoTSimulator</div>
         </div>
       </div>
+    </div>
+
   </div>
+
 </body>
 
 </html>
