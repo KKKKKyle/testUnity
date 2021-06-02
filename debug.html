@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | IoTSimulator</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="TemplateData/UnityProgress.js"></script>
+  <script src="Build/UnityLoader.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/testUnity.json", { onProgress: UnityProgress });
+  </script>
+</head>
+
+<body>
+
+  
+  <div class="row h-100 justify-content-start" style="margin-top: 10%;">
+
+      <div class="webgl-content" style="width: 100%;">
+        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+        <div style="width: 960px; height: 600px; background-color:red"></div>
+        <div class="footeroverflow-auto" style="height: 400px">
+          <div
+        </div>
+      </div>
+
+  </div>
+</body>
+
+</html>
